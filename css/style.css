@@ -250,12 +250,12 @@ h4 {
 
 /* Modal window ======================== */
 
-/* .modal-open {
+.modal-open {
     height: 100%;
     width: 100%;
     position: fixed;
     overflow: hidden;
-} */
+}
 
 .modal {
     top: 50%;
@@ -1087,18 +1087,18 @@ h4 {
 
 .form__row span {
     position: absolute;
-    left: 5%;
+    left: 8%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .form__name,
 .form__email {
-    padding: 15px 12px 15px 35px;
+    padding: 15px 12px 15px 47px;
     width: 286px;
     height: 52px;
     border: 1px solid var(--border-color);
-    border-radius: 6px;
+    border-radius: 26px;
     filter: drop-shadow(22px 12px 22px rgba(0, 0, 0, 0.02)) drop-shadow(12px 23px 12px rgba(0, 0, 0, 0.03)) drop-shadow(9px 6px 9px rgba(0, 0, 0, 0.03)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.03));
 }
 
@@ -1107,8 +1107,14 @@ h4 {
     color: var(--text-grey);
 }
 
+.form__row {
+    display: flex;
+    justify-content: center;
+}
+
 .form__row .btn {
     width: 219px;
+    height: 52px;
 }
 
 /* FORM ICONS */
@@ -1123,6 +1129,30 @@ h4 {
 @media (max-width: 1200px) {
     .library__subtitle {
         font-size: 17px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .asx-header .asx-contact__btn:hover,
+    .asx-header .asx-login__btn:hover,
+    .asx-header .asx-search__btn:hover {
+        background-color: #ff9c00;
+        border-color: #ffffff;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .asx-header .asx-contact__btn:hover {
+        background-image: url("../img/icons/email-ic.svg");
+    }
+
+    .asx-header .asx-login__btn:hover {
+        background-image: url("../img/icons/login-ic.svg");
+    }
+
+    .asx-header .asx-search__btn:hover {
+        background-image: url("../img/icons/search-ic.svg");
     }
 }
 
@@ -1195,6 +1225,10 @@ h4 {
 
     .form {
         margin-bottom: 60px;
+    }
+
+    .form__row {
+        display: block;
     }
 
     .title {
@@ -1390,7 +1424,7 @@ h4 {
     .form__name,
     .form__email {
         width: 100%;
-        padding-left: 50px;
+        padding-left: 64px;
     }
 
     .form__row .btn {
