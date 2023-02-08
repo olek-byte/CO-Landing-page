@@ -255,6 +255,7 @@ h4 {
     width: 100%;
     position: fixed;
     overflow: hidden;
+    bottom: 322%;
 }
 
 .modal {

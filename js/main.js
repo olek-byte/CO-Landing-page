@@ -68,9 +68,11 @@ featuresSection();
 
 // MODAL SCROLL
 const bodyEl = document.querySelector('body');
+
 const modalFunction = () => {
     if (bodyEl.classList.contains('modal-open')) {
         document.querySelector('html').style.overflow = 'hidden';
+
     } else {
         document.querySelector('html').style.overflow = 'visible';
     }
