@@ -67,29 +67,29 @@ const featuresSection = () => {
 featuresSection();
 
 // LIBRARY SECTION (modal window)
-const scrollController = {
-    scrollPosition: 0,
-    disabledScroll() {
-        scrollController.scrollPosition = window.scrollY;
-        document.body.style.cssText = `
-      overflow: hidden;
-      position: fixed;
-      top: -${scrollController.scrollPosition}px;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      padding-right: ${window.innerWidth - document.body.offsetWidth}px
-    `;
-        document.documentElement.style.scrollBehavior = 'unset';
-    },
-    enabledScroll() {
-        document.body.style.cssText = '';
-        window.scroll({
-            top: scrollController.scrollPosition
-        })
-        document.documentElement.style.scrollBehavior = '';
-    },
-}
+// const scrollController = {
+//     scrollPosition: 0,
+//     disabledScroll() {
+//         scrollController.scrollPosition = window.scrollY;
+//         document.html.style.cssText = `
+//       overflow: hidden;
+//       position: fixed;
+//       top: -${scrollController.scrollPosition}px;
+//       left: 0;
+//       height: 100vh;
+//       width: 100vw;
+//       padding-right: ${window.innerWidth - document.html.offsetWidth}px
+//     `;
+//         document.documentElement.style.scrollBehavior = 'unset';
+//     },
+//     enabledScroll() {
+//         document.html.style.cssText = '';
+//         window.scroll({
+//             top: scrollController.scrollPosition
+//         })
+//         document.documentElement.style.scrollBehavior = '';
+//     },
+// }
 
 // MODAL SCROLL
 const bodyEl = document.querySelector('body');
@@ -97,10 +97,10 @@ const bodyEl = document.querySelector('body');
 const modalFunction = () => {
     if (bodyEl.classList.contains('modal-open')) {
         document.querySelector('html').style.overflow = 'hidden';
-        scrollController.disabledScroll();
+        // scrollController.disabledScroll();
     } else {
         document.querySelector('html').style.overflow = 'visible';
-        scrollController.enabledScroll();
+        // scrollController.enabledScroll();
     }
 }
 modalFunction();
