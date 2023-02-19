@@ -17,32 +17,6 @@ const smoothScroll = () => {
 }
 smoothScroll();
 
-// LIBRARY SECTION (modal window)
-
-const scrollController = {
-    scrollPosition: 0,
-    disabledScroll() {
-        scrollController.scrollPosition = window.scrollY;
-        document.body.style.cssText = `
-      overflow: hidden;
-      position: fixed;
-      top: -${scrollController.scrollPosition}px;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      padding-right: ${window.innerWidth - document.body.offsetWidth}px
-    `;
-        document.documentElement.style.scrollBehavior = 'unset';
-    },
-    enabledScroll() {
-        document.body.style.cssText = '';
-        window.scroll({
-            top: scrollController.scrollPosition
-        })
-        document.documentElement.style.scrollBehavior = '';
-    },
-}
-
 // LIBRARY SECTION
 const librarySection = () => {
     const hideCardsFirstRow = document.getElementById('hide-cards-first-row');
@@ -92,15 +66,41 @@ const featuresSection = () => {
 }
 featuresSection();
 
+// LIBRARY SECTION (modal window)
+const scrollController = {
+    scrollPosition: 0,
+    disabledScroll() {
+        scrollController.scrollPosition = window.scrollY;
+        document.body.style.cssText = `
+      overflow: hidden;
+      position: fixed;
+      top: -${scrollController.scrollPosition}px;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      padding-right: ${window.innerWidth - document.body.offsetWidth}px
+    `;
+        document.documentElement.style.scrollBehavior = 'unset';
+    },
+    enabledScroll() {
+        document.body.style.cssText = '';
+        window.scroll({
+            top: scrollController.scrollPosition
+        })
+        document.documentElement.style.scrollBehavior = '';
+    },
+}
+
 // MODAL SCROLL
 const bodyEl = document.querySelector('body');
 
 const modalFunction = () => {
     if (bodyEl.classList.contains('modal-open')) {
         document.querySelector('html').style.overflow = 'hidden';
-
+        scrollController.disabledScroll();
     } else {
         document.querySelector('html').style.overflow = 'visible';
+        scrollController.enabledScroll();
     }
 }
 modalFunction();
