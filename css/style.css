@@ -218,6 +218,14 @@ h4 {
     }
 }
 
+.asx-products__navigations.scroll.show {
+    z-index: 9999;
+}
+
+.asx-extended__navigations.scroll {
+    z-index: 9999;
+}
+
 /* For JS =============================== */
 #hide-cards {
     display: flex;
