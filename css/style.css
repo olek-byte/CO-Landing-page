@@ -258,13 +258,13 @@ h4 {
 
 /* Modal window ======================== */
 
-.modal-open {
+/* .modal-open {
     height: 100%;
     width: 100%;
     position: fixed;
     overflow: hidden;
     bottom: 322%;
-}
+} */
 
 .modal {
     top: 50%;
