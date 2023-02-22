@@ -350,6 +350,11 @@ h4 {
     background-color: var(--grey-bcg);
 }
 
+.library__card--soon .library__btn:hover {
+    background-color: transparent;
+    cursor: auto;
+}
+
 /* HERO SECTION ========================= */
 .hero {
     padding: 160px 0 0 0;
