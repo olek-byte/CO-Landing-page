@@ -279,7 +279,7 @@ h4 {
 }
 
 .modal-body {
-    padding: 20px;
+    padding: 55px 20px 20px 20px;
     min-height: 93%;
     overflow-y: hidden;
 }
@@ -354,6 +354,8 @@ h4 {
     background-color: transparent;
     cursor: auto;
 }
+
+
 
 /* HERO SECTION ========================= */
 .hero {
