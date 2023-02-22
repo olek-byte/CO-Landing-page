@@ -251,12 +251,35 @@ h4 {
         background-color: var(--white);
     }
 
-    .library__iframe {
+    /* .library__iframe {
         margin-top: -57px;
+    } */
+
+    .pop-out {
+        display: none;
+    }
+
+    .modal-body {
+        padding: 55px 20px 20px 20px;
     }
 }
 
 /* Modal window ======================== */
+.pop-out {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    opacity: 1;
+    right: 32px;
+    top: 32px;
+    background-color: #000000;
+    z-index: 2;
+    pointer-events: none;
+    background-image: url('../img/icons/pop-out.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /* .modal-open {
     height: 100%;
@@ -284,13 +307,6 @@ h4 {
     min-height: 93%;
     overflow-y: hidden;
 }
-
-/* .ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Wrql6b-AeOLfc-b0t70b {
-    top: auto;
-    right: 0;
-} */
-
-
 
 .modal-title,
 .modal-subtitle,
