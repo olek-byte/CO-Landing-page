@@ -104,3 +104,43 @@ const modalFunction = () => {
     }
 }
 modalFunction();
+
+
+
+
+
+
+// iframeDocument.document.querySelector('.ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Wrql6b-AeOLfc-b0t70b').style.backgroundColor = 'black';
+
+
+
+
+
+
+// let iframeIcon = iframeDocument.querySelector('.ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Wrql6b-AeOLfc-b0t70b');
+
+// iframeDocument.body.style.backgroundColor = 'black';
+// console.log(iframeDocument);
+
+const firstIframe = document.getElementById('firstIframe');
+
+firstIframe.addEventListener('load', () => {
+    const iframeWindow = firstIframe.contentWindow;
+    console.log(iframeWindow);
+    const iframeDocument = firstIframe.contentDocument;
+    console.log(firstIframe.contentDocument);
+    console.log('LOADDDDDDD');
+    iframeDocument.querySelector('.ndfHFb-c4YZDc-i5oIFb.ndfHFb-c4YZDc-e1YmVc .ndfHFb-c4YZDc-Wrql6b-AeOLfc-b0t70b .ndfHFb-c4YZDc-GSQQnc-LgbsSe').style.backgroundColor = '#000000';
+})
+
+
+
+const iframeWindow = firstIframe.contentWindow;
+console.log(iframeWindow);
+const iframeDocument = firstIframe.contentDocument;
+console.log(iframeDocument);
+
+// iframeDocument.querySelector('.ndfHFb-c4YZDc-i5oIFb.ndfHFb-c4YZDc-e1YmVc .ndfHFb-c4YZDc-Wrql6b-AeOLfc-b0t70b .ndfHFb-c4YZDc-GSQQnc-LgbsSe').style.backgroundColor = '#000000';
+// console.log(iframeDocument.querySelector('.ndfHFb-c4YZDc-i5oIFb.ndfHFb-c4YZDc-e1YmVc'));
+// console.log(iframeDocument.body.querySelector('.ndfHFb-c4YZDc-i5oIFb.ndfHFb-c4YZDc-e1YmVc .ndfHFb-c4YZDc-Wrql6b-AeOLfc-b0t70b .ndfHFb-c4YZDc-GSQQnc-LgbsSe'));
+console.log(iframeDocument.body);
