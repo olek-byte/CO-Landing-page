@@ -266,19 +266,32 @@ h4 {
 
 /* Modal window ======================== */
 .pop-out {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     opacity: 1;
     right: 32px;
     top: 32px;
-    background-color: #000000;
+    background-color: #00000096;
     z-index: 2;
     pointer-events: none;
-    background-image: url('../img/icons/pop-out.png');
+    border-radius: 2px;
+    /* background-image: url('../img/icons/pop-out.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.pop-out__img {
+    background-image: url('../img/icons/download.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 38px;
+    height: 39px;
 }
 
 /* .modal-open {
