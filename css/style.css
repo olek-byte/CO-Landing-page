@@ -1622,6 +1622,11 @@ h4 {
 }
 
 @media (max-height: 414px) {
+
+    .pop-out {
+        right: 27px;
+    }
+
     .modal {
         height: auto;
     }
