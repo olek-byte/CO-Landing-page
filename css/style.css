@@ -315,6 +315,7 @@ h4 {
 }
 
 .modal-body {
+    position: relative;
     /* padding: 55px 20px 20px 20px; */
     padding: 20px;
     min-height: 93%;
@@ -1216,6 +1217,11 @@ h4 {
 }
 
 @media (max-width: 992px) {
+
+    .pop-out {
+        top: 22px;
+    }
+
     .video__img {
         display: none;
     }
@@ -1282,6 +1288,10 @@ h4 {
 }
 
 @media (max-width: 768px) {
+    .pop-out {
+        right: 42px;
+        top: 17px;
+    }
 
     .form {
         margin-bottom: 60px;
@@ -1428,6 +1438,10 @@ h4 {
 }
 
 @media (max-width: 576px) {
+
+    .pop-out {
+        right: 27px;
+    }
 
     .features h2,
     .reasons__inner {
