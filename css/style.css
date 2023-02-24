@@ -276,10 +276,6 @@ h4 {
     z-index: 2;
     pointer-events: none;
     border-radius: 2px;
-    /* background-image: url('../img/icons/pop-out.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
 }
 
 .pop-out__img {
@@ -316,7 +312,6 @@ h4 {
 
 .modal-body {
     position: relative;
-    /* padding: 55px 20px 20px 20px; */
     padding: 20px;
     min-height: 93%;
     overflow-y: hidden;
@@ -1057,6 +1052,10 @@ h4 {
 }
 
 /* FAQ SECTION ============================== */
+.faq {
+    padding-bottom: 0;
+}
+
 #faq-accordion .card-body {
     margin-top: 0;
 }
@@ -1130,6 +1129,7 @@ h4 {
 /* FORM SECTION ===================== */
 .form {
     margin-bottom: 100px;
+    border-top: 50px solid transparent;
 }
 
 .form__box {

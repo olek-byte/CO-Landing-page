@@ -1,6 +1,7 @@
-// SMOOTH SCROLL
+// // SMOOTH SCROLL
 const smoothScroll = () => {
     const anchors = document.querySelectorAll('a[href*="#"]');
+
 
     for (let anchor of anchors) {
         anchor.addEventListener('click', function (e) {
@@ -12,11 +13,15 @@ const smoothScroll = () => {
                 behavior: 'smooth',
                 block: 'center'
             })
+
         })
     }
 
 }
 smoothScroll();
+
+
+
 
 // LIBRARY SECTION
 const librarySection = () => {
@@ -118,10 +123,3 @@ modalFunction();
 //     console.log('LOADDDDDDD');
 //     iframeDocument.querySelector('.ndfHFb-c4YZDc-i5oIFb.ndfHFb-c4YZDc-e1YmVc .ndfHFb-c4YZDc-Wrql6b-AeOLfc-b0t70b .ndfHFb-c4YZDc-GSQQnc-LgbsSe').style.backgroundColor = '#000000';
 // })
-
-
-
-// const iframeWindow = firstIframe.contentWindow;
-// console.log(iframeWindow);
-// const iframeDocument = firstIframe.contentDocument;
-// console.log(iframeDocument);
