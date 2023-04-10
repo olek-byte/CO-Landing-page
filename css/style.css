@@ -425,17 +425,29 @@ h4 {
 }
 
 .video__title {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 32px;
     font-weight: 700;
     font-size: 24px;
     color: var(--title-dark);
 }
 
+.video__tabs {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video__link:not(:last-child) {
+    margin-right: 12px;
+}
+
 .video__link {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
     font-weight: 600;
     background-color: var(--video-link-bcg);
     box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.1);
@@ -447,7 +459,7 @@ h4 {
 }
 
 .nav-pills .nav-link.active {
-    padding: 12px;
+    padding: 10px 12px;
     border-radius: 16px;
     background-color: var(--active-tab);
     color: var(--white);
@@ -459,22 +471,16 @@ h4 {
 }
 
 .nav-pills .nav-link {
-    padding: 12px;
+    margin-bottom: 20px;
+    padding: 10px 12px;
     font-weight: 500;
     border-radius: 16px;
     color: var(--title-dark);
 }
 
 .video__link {
-    width: 112px;
-}
-
-.video__link--email {
-    width: 122px;
-}
-
-.video__link--web {
-    width: 164px;
+    min-width: 80px;
+    min-height: 54px;
 }
 
 .video__block {
@@ -506,6 +512,10 @@ h4 {
     right: -325px;
     bottom: 0;
     max-width: 300px;
+}
+
+.video__img-add--last {
+    max-width: 264px;
 }
 
 /* VIDEO ICONS ============================ */
@@ -554,6 +564,7 @@ h4 {
 }
 
 .steps__img {
+    /* height: 357px; */
     border-radius: 36px 36px 27px 27px;
 }
 
@@ -1327,17 +1338,8 @@ h4 {
     }
 
     .video__tabs a {
-        margin: 0 12px 30px;
         font-size: 16px;
         line-height: 133%;
-    }
-
-    .video__tabs a:first-child {
-        margin-left: 0;
-    }
-
-    .video__tabs a:last-child {
-        margin-right: 0;
     }
 
     .video .icon--tab {
