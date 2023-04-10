@@ -18,50 +18,53 @@
     font-style: normal;
 }
 
+/* font-family: 'Encode Sans',
+sans-serif; */
+
 @font-face {
-    font-family: 'Open Sans';
-    src: url("../fonts/OpenSans-Bold.woff2"),
-        url("../fonts/OpenSans-Bold.woff");
+    font-family: 'Encode Sans';
+    src: url("../fonts/EncodeSans-Bold.woff2"),
+        url("../fonts/EncodeSans-Bold.woff");
     font-display: swap;
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Encode Sans';
     src:
-        url("../fonts/OpenSans-SemiBold.woff2"),
-        url("../fonts/OpenSans-SemiBold.woff");
+        url("../fonts/EncodeSans-SemiBold.woff2"),
+        url("../fonts/EncodeSans-SemiBold.woff");
     font-display: swap;
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Encode Sans';
     src:
-        url("../fonts/OpenSans-Medium.woff2"),
-        url("../fonts/OpenSans-Medium.woff");
+        url("../fonts/EncodeSans-Medium.woff2"),
+        url("../fonts/EncodeSans-Medium.woff");
     font-display: swap;
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Encode Sans';
     src:
-        url("../fonts/OpenSans-Regular.woff2"),
-        url("../fonts/OpenSans-Regular.woff");
+        url("../fonts/EncodeSans-Regular.woff2"),
+        url("../fonts/EncodeSans-Regular.woff");
     font-display: swap;
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Encode Sans';
     src:
-        url("../fonts/OpenSans-Light.woff2"),
-        url("../fonts/OpenSans-Light.woff");
+        url("../fonts/EncodeSans-Light.woff2"),
+        url("../fonts/EncodeSans-Light.woff");
     font-display: swap;
     font-weight: 300;
     font-style: normal;
@@ -82,7 +85,7 @@
 body {
     overflow-x: clip;
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: var(--text-grey);
@@ -320,7 +323,7 @@ h4 {
 .modal-title,
 .modal-subtitle,
 .modal__span {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -646,7 +649,7 @@ h4 {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 12px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
 }
 
 .library__subtitle {
@@ -681,7 +684,6 @@ h4 {
 }
 
 /* GENERATE- SECTION ============================= */
-
 .generate__inner,
 .form__content {
     margin: 0 auto;
@@ -739,7 +741,7 @@ h4 {
 .features__tabs-title {
     margin: 0 0 0 14px;
     padding-right: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: var(--text-grey);
@@ -913,7 +915,7 @@ h4 {
 .pricing__plan {
     display: block;
     margin-bottom: 8px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-weight: 600;
     font-size: 20px;
 }
@@ -933,7 +935,7 @@ h4 {
 }
 
 .pricing__name {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: var(--text-grey);
@@ -1416,7 +1418,7 @@ h4 {
     }
 
     .features__tabs-descr {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Encode Sans', sans-serif;
         font-size: 16px;
         color: var(--text-grey);
     }
