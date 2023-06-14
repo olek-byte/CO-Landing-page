@@ -1028,6 +1028,9 @@ h4 {
     fill: var(--active-tab);
     height: 51px;
 }
+.reasons__icon-time,.reasons__icon-pills, .reasons__icon-multiface, .reasons__icon-noInteger, .reasons__icon-libr {
+     width: 50px;
+}
 
 .icon--time,
 .reasons__card .icon--magic,
