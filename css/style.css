@@ -1024,15 +1024,16 @@ h4 {
     font-size: 16px;
 }
 
-.reasons__card .icon {
+/* .reasons__card .icon {
     fill: var(--active-tab);
     height: 51px;
-}
-.reasons__icon-time,.reasons__icon-pills, .reasons__icon-multiface, .reasons__icon-noInteger, .reasons__icon-libr {
+} */
+
+.reasons__card .reasons__icon-time, .reasons__card .reasons__icon-pills, .reasons__card .reasons__icon-multiface, .reasons__card .reasons__icon-noInteger, .reasons__card .reasons__icon-libr, .reasons__card .reasons__icon-intuit {
      width: 50px;
 }
 
-.icon--time,
+/* .icon--time,
 .reasons__card .icon--magic,
 .icon--noInt {
     width: 44px;
@@ -1048,7 +1049,7 @@ h4 {
 
 .icon--smile {
     width: 43px;
-}
+} */
 
 /* CLIENTS SECTION =========================== */
 .clients__inner {
