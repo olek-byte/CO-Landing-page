@@ -1051,6 +1051,14 @@ h4 {
     width: 43px;
 } */
 
+.library__icon-pdf, .library__icon-email {
+    width: 16px;
+}
+
+.library__icon-micr {
+    width: 20px;
+}
+
 /* CLIENTS SECTION =========================== */
 .clients__inner {
     margin-bottom: 60px;
