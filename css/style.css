@@ -82,6 +82,8 @@ sans-serif; */
     --border-color: #DADCE1;
 }
 
+
+
 body {
     overflow-x: clip;
     font-style: normal;
@@ -612,6 +614,8 @@ h4 {
 }
 
 .library__img {
+    min-height: 310px;
+    object-fit: contain;
     border-radius: 11px 11px 0 0;
     border-bottom: 0.5px solid var(--border-color);
 }
@@ -1029,8 +1033,13 @@ h4 {
     height: 51px;
 } */
 
-.reasons__card .reasons__icon-time, .reasons__card .reasons__icon-pills, .reasons__card .reasons__icon-multiface, .reasons__card .reasons__icon-noInteger, .reasons__card .reasons__icon-libr, .reasons__card .reasons__icon-intuit {
-     width: 50px;
+.reasons__card .reasons__icon-time,
+.reasons__card .reasons__icon-pills,
+.reasons__card .reasons__icon-multiface,
+.reasons__card .reasons__icon-noInteger,
+.reasons__card .reasons__icon-libr,
+.reasons__card .reasons__icon-intuit {
+    width: 50px;
 }
 
 /* .icon--time,
@@ -1051,7 +1060,8 @@ h4 {
     width: 43px;
 } */
 
-.library__icon-pdf, .library__icon-email {
+.library__icon-pdf,
+.library__icon-email {
     width: 16px;
 }
 

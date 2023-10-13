@@ -1,4 +1,4 @@
-// // SMOOTH SCROLL
+//  SMOOTH SCROLL
 const smoothScroll = () => {
     const anchors = document.querySelectorAll('a[href*="#"]');
 
@@ -19,8 +19,6 @@ const smoothScroll = () => {
 
 }
 smoothScroll();
-
-
 
 
 // LIBRARY SECTION
