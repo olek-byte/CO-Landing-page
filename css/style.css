@@ -87,6 +87,10 @@ body {
     color: var(--text-grey);
 }
 
+.safari-iframe {
+    min-height: 84vh!important;
+}
+
 /* ================================ */
 .sections-start {
     overflow-x: hidden;
