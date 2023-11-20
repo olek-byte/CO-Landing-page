@@ -1611,6 +1611,9 @@ h4 {
 }
 
 @media (max-height: 414px) {
+    .safari-iframe {
+        min-height: 100vh!important;
+    }
 
     .pop-out {
         right: 27px;
