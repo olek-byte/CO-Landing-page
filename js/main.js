@@ -1,6 +1,6 @@
 //PDF Rendering page
 initPDFViewer = () => {
-  $("#pdfViewerDiv").html("");
+  $("#pdfViewerDiv1").html("");
   pdfjsLib
     .getDocument("Offering-Memorandum-For-Sale.pdf")
     .promise.then((pdfDoc) => {
@@ -35,7 +35,7 @@ initPDFViewer = () => {
   $("#pdfViewerDiv2").html("");
   pdfjsLib
     .getDocument(
-      "https://ascendix.com/wp-content/uploads/2023/06/Listing-Activity-Report.pdf"
+      "https://staging.ascendix.com/wp-content/uploads/2023/09/Listing-Activity-Report.pdf"
     )
     .promise.then((pdfDoc) => {
       //   console.log(pdfDoc);
